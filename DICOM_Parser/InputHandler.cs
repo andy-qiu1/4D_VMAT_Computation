@@ -2,7 +2,7 @@
 using System.IO;
 
 
-namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
+namespace BC_Cancer_Agency.four_D_VMAT.DICOM_Parser
 {
     internal static class InputHandler
     {
@@ -10,7 +10,11 @@ namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
         {
 #if DEBUG
             string CurrentDirectory = Directory.GetCurrentDirectory();
-            string path = Path.Combine(CurrentDirectory, "a.bin");
+            string path = Path.Combine(CurrentDirectory, "a.dcm");
+            if (!File.Exists(path)){
+                Console.WriteLine("no such path");
+                Console.ReadLine();
+            }
             return path;
 #else
         start:

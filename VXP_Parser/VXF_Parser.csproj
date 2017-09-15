@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{DFA592EB-4A11-4AD9-ADEF-2E8EEAD21B7C}</ProjectGuid>
+    <ProjectGuid>{FC0B5B1B-735F-4952-B483-B797D9094528}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>BC_Cancer_Agency.D_VMAT.TLE_Parser</RootNamespace>
-    <AssemblyName>BC_Cancer_Agency.4D_VMAT.TLE_Parser</AssemblyName>
+    <RootNamespace>VXP_Parser</RootNamespace>
+    <AssemblyName>VXP_Parser</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -34,12 +34,9 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TLE_Parser.cs" />
     <Compile Include="InputHandler.cs" />
-    <Compile Include="Subbeam.cs" />
-    <Compile Include="AxisDataSnapshot.cs" />
-    <Compile Include="AxisData.cs" />
-    <Compile Include="TrajectoryData.cs" />
+    <Compile Include="VFX_Parser.cs" />
+    <Compile Include="Varian_data.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

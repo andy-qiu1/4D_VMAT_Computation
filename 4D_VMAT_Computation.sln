@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BC_Cancer_Agency.4D_VMAT.TLE_Parser", "BC_Cancer_Agency.4D_VMAT.TLE_Parser\BC_Cancer_Agency.4D_VMAT.TLE_Parser.csproj", "{DFA592EB-4A11-4AD9-ADEF-2E8EEAD21B7C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DICOM_Parser", "DICOM_Parser\DICOM_Parser.csproj", "{4838C03D-1D7B-4EDD-B466-A531033D128E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VXF_Parser", "VXP_Parser\VXF_Parser.csproj", "{FC0B5B1B-735F-4952-B483-B797D9094528}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XML_parser", "XML_parser\XML_parser.csproj", "{C1AE34A7-6729-4439-8C88-D598B1813B1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +19,17 @@ Global
 		{DFA592EB-4A11-4AD9-ADEF-2E8EEAD21B7C}.Debug|x86.Build.0 = Debug|x86
 		{DFA592EB-4A11-4AD9-ADEF-2E8EEAD21B7C}.Release|x86.ActiveCfg = Release|x86
 		{DFA592EB-4A11-4AD9-ADEF-2E8EEAD21B7C}.Release|x86.Build.0 = Release|x86
+		{4838C03D-1D7B-4EDD-B466-A531033D128E}.Debug|x86.ActiveCfg = Debug|x86
+		{4838C03D-1D7B-4EDD-B466-A531033D128E}.Debug|x86.Build.0 = Debug|x86
+		{4838C03D-1D7B-4EDD-B466-A531033D128E}.Release|x86.ActiveCfg = Release|x86
+		{4838C03D-1D7B-4EDD-B466-A531033D128E}.Release|x86.Build.0 = Release|x86
+		{FC0B5B1B-735F-4952-B483-B797D9094528}.Debug|x86.ActiveCfg = Debug|x86
+		{FC0B5B1B-735F-4952-B483-B797D9094528}.Debug|x86.Build.0 = Debug|x86
+		{FC0B5B1B-735F-4952-B483-B797D9094528}.Release|x86.ActiveCfg = Release|x86
+		{FC0B5B1B-735F-4952-B483-B797D9094528}.Release|x86.Build.0 = Release|x86
+		{C1AE34A7-6729-4439-8C88-D598B1813B1A}.Debug|x86.ActiveCfg = Debug|x86
+		{C1AE34A7-6729-4439-8C88-D598B1813B1A}.Debug|x86.Build.0 = Debug|x86
+		{C1AE34A7-6729-4439-8C88-D598B1813B1A}.Release|x86.ActiveCfg = Release|x86
+		{C1AE34A7-6729-4439-8C88-D598B1813B1A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal

@@ -2,7 +2,7 @@
 using System;
 using System.IO;
 
-namespace BC_Cancer_Agency.four_D_VMAT
+namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
 
 	public enum AxisEnumeration
@@ -34,7 +34,7 @@ namespace BC_Cancer_Agency.four_D_VMAT
 
         public AxisData(BinaryReader reader,int axis, int numberOfSample) 
         {
-            this.ae = (BC_Cancer_Agency.four_D_VMAT.AxisEnumeration)axis;
+            this.ae = (BC_Cancer_Agency.four_D_VMAT.TLE_Parser.AxisEnumeration)axis;
             this.numberOfSample = numberOfSample;
             this.AxisDataSnapshots = new AxisDataSnapshot[numberOfSample];
             for (int i = 0;i < numberOfSample;i++){

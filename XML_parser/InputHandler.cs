@@ -2,7 +2,7 @@
 using System.IO;
 
 
-namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
+namespace BC_Cancer_Agency.four_D_VMAT.XML_parser
 {
     internal static class InputHandler
     {
@@ -10,7 +10,7 @@ namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
         {
 #if DEBUG
             string CurrentDirectory = Directory.GetCurrentDirectory();
-            string path = Path.Combine(CurrentDirectory, "a.bin");
+            string path = Path.Combine(CurrentDirectory, "a.xml");
             return path;
 #else
         start:

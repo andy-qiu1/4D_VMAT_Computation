@@ -1,7 +1,7 @@
 ﻿using System.IO;
 using System;
 
-namespace BC_Cancer_Agency.four_D_VMAT
+namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
     internal class Subbeam
     {
@@ -24,11 +24,11 @@ namespace BC_Cancer_Agency.four_D_VMAT
         }
         public void Print()
         {
-            Console.WriteLine("Control Point Number is: "+this.cp);
-            Console.WriteLine("Does delievered is: "+this.mu+ " MU");
-            Console.WriteLine("Expected Irradiation Time: "+this.radTime+ " S" );
-            Console.WriteLine("Sequence number is: "+this.Seq);
-            Console.WriteLine("Name is: "+this.name);
+            Console.WriteLine("  Control Point Number is: "+this.cp);
+            Console.WriteLine("  Does delievered is: "+this.mu+ " MU");
+            Console.WriteLine("  Expected Irradiation Time: "+this.radTime+ " S" );
+            Console.WriteLine("  Sequence number is: "+this.Seq);
+            Console.WriteLine("  Name is: "+this.name);
         }
     }
 }

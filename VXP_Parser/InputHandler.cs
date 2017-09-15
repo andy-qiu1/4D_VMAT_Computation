@@ -2,7 +2,7 @@
 using System.IO;
 
 
-namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
+namespace BC_Cancer_Agency.four_D_VMAT.VXF_Parser
 {
     internal static class InputHandler
     {
@@ -10,7 +10,7 @@ namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
         {
 #if DEBUG
             string CurrentDirectory = Directory.GetCurrentDirectory();
-            string path = Path.Combine(CurrentDirectory, "a.bin");
+            string path = Path.Combine(CurrentDirectory, "a.vxp");
             return path;
 #else
         start:

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-namespace BC_Cancer_Agency.four_D_VMAT
+namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
     internal class AxisDataSnapshot
     {
@@ -14,7 +14,7 @@ namespace BC_Cancer_Agency.four_D_VMAT
 
         internal void print()
         {
-            Console.WriteLine("Expected: "+expected+"  "+"Actual: "+ actual);
+            Console.WriteLine("  Expected: "+expected+"  "+"Actual: "+ actual);
         }
     }
 }

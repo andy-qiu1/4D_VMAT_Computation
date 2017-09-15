@@ -2,15 +2,18 @@
 
 
 
-namespace BC_Cancer_Agency.four_D_VMAT
+namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
     class MainClass
     {
         public static void Main()
         {
             var path = InputHandler.GetPathFromInput();
-            var parser = new TLE_Parser();
-            parser.parse(path);
+
+            TrajectoryData trajectoryData = TLF_Parser.Parse(path);
+#if DEBUG
+            trajectoryData.Print();
+#endif
         }
     }
 }
