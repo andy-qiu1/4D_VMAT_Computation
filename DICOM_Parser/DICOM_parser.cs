@@ -15,21 +15,22 @@ namespace BC_Cancer_Agency.four_D_VMAT.DICOM_Parser
 			// python app to call 
 			string myPythonApp = "Test.py";
 
-			// dummy parameters to send Python script 
+            // dummy parameters to send Python script 
 
-			// Create new process start info 
-			ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python);
+            // Create new process start info 
+            ProcessStartInfo myProcessStartInfo = new ProcessStartInfo(python)
+            {
 
-			// make sure we can read the output from stdout 
-			myProcessStartInfo.UseShellExecute = false;
-			myProcessStartInfo.RedirectStandardOutput = true;
+                // make sure we can read the output from stdout 
+                UseShellExecute = false,
+                RedirectStandardOutput = true,
 
-			// start python app with 3 arguments  
-			// 1st arguments is pointer to itself,  
-			// 2nd and 3rd are actual arguments we want to send 
-			myProcessStartInfo.Arguments = myPythonApp + " " + file_path;
-
-			Process myProcess = new Process();
+                // start python app with 3 arguments  
+                // 1st arguments is pointer to itself,  
+                // 2nd and 3rd are actual arguments we want to send 
+                Arguments = myPythonApp + " " + file_path
+            };
+            Process myProcess = new Process();
 			// assign start information to the process 
 			myProcess.StartInfo = myProcessStartInfo;
 

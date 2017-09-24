@@ -3,7 +3,7 @@ using System;
 
 namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
-    internal class Subbeam
+    class Subbeam
     {
         int cp;
         float mu;

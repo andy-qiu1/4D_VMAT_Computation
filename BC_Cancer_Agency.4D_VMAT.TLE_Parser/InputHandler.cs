@@ -6,11 +6,12 @@ namespace BC_Cancer_Agency.four_D_VMAT.TLE_Parser
 {
     internal static class InputHandler
     {
-        public static string GetPathFromInput()
+        //function to display information and retrive information from console
+        public static string GetPathFromInput(string address)
         {
 #if DEBUG
             string CurrentDirectory = Directory.GetCurrentDirectory();
-            string path = Path.Combine(CurrentDirectory, "a.bin");
+            string path = Path.Combine(CurrentDirectory, address);
             return path;
 #else
         start:

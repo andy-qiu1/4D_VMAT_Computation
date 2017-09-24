@@ -6,7 +6,7 @@ namespace BC_Cancer_Agency.four_D_VMAT.VXF_Parser
 {
     internal static class VXF_Parser
     {
-        internal static void Parse(String path)
+        internal static Varian_data Parse(String path)
         {
             using (StreamReader sr = File.OpenText(path))
             {
@@ -58,8 +58,10 @@ namespace BC_Cancer_Agency.four_D_VMAT.VXF_Parser
                         Console.WriteLine(data_entries.ElementAt(i));
                         data[Data_layouts[i]].Add(Convert.ToSingle(data_entries.ElementAt(i)));
                     }
-                    Varian_data v = new Varian_data(CRC,version,Data_layouts,patient_ID,date,Total_study_time,Samples_per_second,Scale_factor,data);
+
                 }
+				Varian_data v = new Varian_data(CRC, version, Data_layouts, patient_ID, date, Total_study_time, Samples_per_second, Scale_factor, data);
+				return v;
 
             }
         }

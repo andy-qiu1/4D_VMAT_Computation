@@ -11,7 +11,7 @@ namespace BC_Cancer_Agency.four_D_VMAT.VXF_Parser
         public static void Main(string[] args)
         {
             var path = InputHandler.GetPathFromInput();
-            VXF_Parser.Parse(path);
+            Varian_data v = VXF_Parser.Parse(path);
 
 
         }
